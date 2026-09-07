@@ -42,3 +42,19 @@ My LeetCode journey, recorded in the order I solved the problems.
 - New accepted LeetCode solutions are pushed automatically by **LeetHub v2**.
 - The folders created by LeetHub are kept as-is.
 - This README is the chronological view of the journey, so the solve order is clear even though GitHub sorts folders by name.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0074-search-a-2d-matrix) |
+## Binary Search
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0074-search-a-2d-matrix) |
+## Matrix
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0074-search-a-2d-matrix) |
+<!---LeetCode Topics End-->
