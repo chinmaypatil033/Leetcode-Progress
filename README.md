@@ -10,3 +10,11 @@ New accepted solutions will be added automatically by LeetHub.
 | 4 | **56. Merge Intervals** | Sep 7, 2026 |
 | 5 | **74. Search A 2D Matrix** | Sep 7, 2026 |
 | 6 | **2529. Maximum Count Of Positive Integer And Negative Integer** | Sep 7, 2026 |
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0007-reverse-integer](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0007-reverse-integer) |
+<!---LeetCode Topics End-->
