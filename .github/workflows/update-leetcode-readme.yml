@@ -19,62 +19,46 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Add missing LeetHub problems to README
+      - name: Rebuild clean README
         run: |
           python - <<'PY'
-          import os, re, subprocess
-          from datetime import datetime
+          import os
+          import re
 
-          if not os.path.exists('README.md'):
-              raise SystemExit('README.md not found')
-
-          with open('README.md', encoding='utf-8') as f:
-              readme = f.read()
-
-          existing = {int(x) for x in re.findall(r'\*\*(\d+)\.\s', readme)}
-
-          # Scan the repository itself instead of only the latest commit.
-          # This handles LeetHub's multiple commits for one submission.
           folders = []
           for name in os.listdir('.'):
               if os.path.isdir(name) and re.fullmatch(r'\d{4}-[a-z0-9-]+', name):
-                  folders.append(name)
+                  number, slug = name.split('-', 1)
+                  folders.append((int(number), slug, name))
 
-          missing = []
-          for folder in sorted(folders):
-              number, slug = folder.split('-', 1)
-              n = int(number)
-              if n not in existing:
-                  missing.append((n, slug, folder))
+          folders.sort(key=lambda x: x[0])
 
-          if not missing:
-              print('README already contains all LeetHub problems.')
-              raise SystemExit(0)
+          lines = [
+              '# LeetCode Problems & Solutions',
+              '',
+              '| # | Problem | Solution |',
+              '|---:|---|---|',
+          ]
 
-          # Number new entries after the existing chronological entries.
-          entry_count = len(re.findall(r'^\|\s*\d+\s*\|', readme, re.MULTILINE))
-          date_text = datetime.now().strftime('%b %-d, %Y')
-          rows = []
-          for i, (n, slug, folder) in enumerate(missing, start=1):
+          for number, slug, folder in folders:
               title = slug.replace('-', ' ').title()
               title = re.sub(r'\b2d\b', '2D', title, flags=re.I)
-              rows.append(f'| {entry_count + i} | **{n}. {title}** | {date_text} |')
+              lines.append(f'| {number} | {title} | [View Solution](./{folder}) |')
 
-          marker = '\n> **Note:**'
-          if marker in readme:
-              pos = readme.find(marker)
-              readme = readme[:pos].rstrip() + '\n' + '\n'.join(rows) + '\n' + readme[pos:]
-          else:
-              readme = readme.rstrip() + '\n' + '\n'.join(rows) + '\n'
+          lines += [
+              '',
+              'All accepted LeetCode solutions are added automatically.',
+              ''
+          ]
 
           with open('README.md', 'w', encoding='utf-8') as f:
-              f.write(readme)
+              f.write('\n'.join(lines))
           PY
 
       - name: Commit README update
         run: |
           if git diff --quiet -- README.md; then
-            echo 'No README changes needed.'
+            echo 'README is already up to date.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
