@@ -18,3 +18,4 @@ New accepted solutions will be added automatically by LeetHub.
 | ------- |
 | [0007-reverse-integer](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0007-reverse-integer) |
 <!---LeetCode Topics End-->
+| 7 | **7. Reverse Integer** | Sep 7, 2026 |
