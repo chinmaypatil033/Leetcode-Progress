@@ -34,6 +34,7 @@ My LeetCode journey, recorded in the order I solved the problems.
 | 28 | **704. Binary Search** | Sep 5, 2026 |
 | 29 | **56. Merge Intervals** | Sep 6, 2026 |
 | 30 | **2529. Maximum Count of Positive Integer and Negative Integer** | Sep 6, 2026 |
+| 31 | **74. Search A 2D Matrix** | Sep 7, 2026 |
 
 > **Note:** The list above is based on the solved-problem history visible in the screenshots. One solved problem was not visible in the screenshots, so it is not guessed or added here.
 
