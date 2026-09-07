@@ -1,0 +1,122 @@
+name: Update LeetCode Progress
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    # Prevent the README commit from triggering the workflow again.
+    if: ${{ !startsWith(github.event.head_commit.message, 'Update LeetCode Progress') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add newly pushed LeetCode problems to README
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          import subprocess
+          from datetime import datetime
+
+          before = os.environ["BEFORE_SHA"]
+          after = os.environ["AFTER_SHA"]
+
+          if not os.path.exists("README.md"):
+              print("README.md not found; nothing to update.")
+              raise SystemExit(0)
+
+          if set(before) == {"0"}:
+              changed = subprocess.check_output(
+                  ["git", "show", "--format=", "--name-only", after], text=True
+              ).splitlines()
+          else:
+              changed = subprocess.check_output(
+                  ["git", "diff", "--name-only", before, after], text=True
+              ).splitlines()
+
+          # LeetHub folders look like: 0001-two-sum, 0056-merge-intervals, etc.
+          folders = []
+          for path in changed:
+              first = path.split("/")[0]
+              if re.fullmatch(r"\d{4}-[a-z0-9-]+", first) and first not in folders:
+                  folders.append(first)
+
+          if not folders:
+              print("No new LeetHub problem folders in this push.")
+              raise SystemExit(0)
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          # Detect problem numbers already listed in the README.
+          existing_numbers = set(
+              int(n) for n in re.findall(r"\*\*(\d+)\.\s", readme)
+          )
+
+          # Use the date of the LeetHub commit that introduced the folder.
+          date_text = datetime.fromisoformat(
+              subprocess.check_output(
+                  ["git", "show", "-s", "--format=%aI", after], text=True
+              ).strip()
+          ).strftime("%b %-d, %Y")
+
+          rows = []
+          for folder in folders:
+              number, slug = folder.split("-", 1)
+              number_int = int(number)
+              if number_int in existing_numbers:
+                  print(f"Problem {number_int} already exists in README; skipping.")
+                  continue
+
+              title = slug.replace("-", " ").title()
+              rows.append(
+                  f"| NEXT | **{number_int}. {title}** | {date_text} |"
+              )
+
+          if not rows:
+              raise SystemExit(0)
+
+          # Replace NEXT placeholders with consecutive numbers based on the
+          # current number of table entries.
+          current_entries = len(re.findall(r"^\|\s*\d+\s*\|", readme, re.MULTILINE))
+          next_number = current_entries + 1
+          numbered_rows = []
+          for row in rows:
+              numbered_rows.append(row.replace("| NEXT |", f"| {next_number} |", 1))
+              next_number += 1
+
+          marker = "\n> **Note:**"
+          insert_at = readme.find(marker)
+          if insert_at == -1:
+              readme = readme.rstrip() + "\n" + "\n".join(numbered_rows) + "\n"
+          else:
+              readme = readme[:insert_at].rstrip() + "\n" + "\n".join(numbered_rows) + "\n" + readme[insert_at:]
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(readme)
+          PY
+
+      - name: Commit README update
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update LeetCode Progress"
+          git push
