@@ -37,3 +37,6 @@
 ---
 
 New accepted solutions will be added automatically by LeetHub.
+| 32 | **56. Merge Intervals** | Sep 7, 2026 |
+| 33 | **74. Search A 2D Matrix** | Sep 7, 2026 |
+| 34 | **2529. Maximum Count Of Positive Integer And Negative Integer** | Sep 7, 2026 |
