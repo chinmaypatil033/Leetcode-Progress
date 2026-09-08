@@ -8,3 +8,15 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1929-concatenation-of-array](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/1929-concatenation-of-array) |
+## Simulation
+|  |
+| ------- |
+| [1929-concatenation-of-array](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/1929-concatenation-of-array) |
+<!---LeetCode Topics End-->
