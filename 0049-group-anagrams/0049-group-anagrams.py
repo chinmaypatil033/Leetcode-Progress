@@ -1,24 +1,19 @@
 class Solution(object):
     def groupAnagrams(self, strs):
         anagrams={}
-
+        
         for word in strs:
-            letters=list(word)
+            count=[0]*26
 
-            for i in range(len(letters)-1):
+            for ch in word:
+                index=ord(ch)-ord('a')
+                count[index]+=1
 
-                for j in range(len(letters)-i-1):
-                    if letters[j]>letters[j+1]:
-                        letters[j],letters[j+1]=letters[j+1],letters[j]
-
-            key=""
-            for letter in letters:
-                key+=letter
+            key=tuple(count)
 
             if key not in anagrams:
                 anagrams[key]=[]
+
             anagrams[key].append(word)
 
-        return list(anagrams.values())                         
-
-        
+        return list(anagrams.values())   
