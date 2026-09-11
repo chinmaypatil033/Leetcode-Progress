@@ -12,3 +12,19 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0056-merge-intervals) |
+## Sorting
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0056-merge-intervals) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0056-merge-intervals) |
+<!---LeetCode Topics End-->
