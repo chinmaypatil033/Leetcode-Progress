@@ -8,28 +8,9 @@
 | 56 | Merge Intervals | [View Solution](./0056-merge-intervals) |
 | 57 | Insert Interval | [View Solution](./0057-insert-interval) |
 | 74 | Search A 2D Matrix | [View Solution](./0074-search-a-2d-matrix) |
+| 509 | Fibonacci Number | [View Solution](./0509-fibonacci-number) |
 | 1470 | Shuffle The Array | [View Solution](./1470-shuffle-the-array) |
 | 1929 | Concatenation Of Array | [View Solution](./1929-concatenation-of-array) |
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-|  |
-| ------- |
-| [0509-fibonacci-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0509-fibonacci-number) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0509-fibonacci-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0509-fibonacci-number) |
-## Recursion
-|  |
-| ------- |
-| [0509-fibonacci-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0509-fibonacci-number) |
-## Memoization
-|  |
-| ------- |
-| [0509-fibonacci-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0509-fibonacci-number) |
-<!---LeetCode Topics End-->
