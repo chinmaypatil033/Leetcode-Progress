@@ -10,24 +10,9 @@
 | 57 | Insert Interval | [View Solution](./0057-insert-interval) |
 | 74 | Search A 2D Matrix | [View Solution](./0074-search-a-2d-matrix) |
 | 509 | Fibonacci Number | [View Solution](./0509-fibonacci-number) |
+| 560 | Subarray Sum Equals K | [View Solution](./0560-subarray-sum-equals-k) |
 | 1470 | Shuffle The Array | [View Solution](./1470-shuffle-the-array) |
 | 1929 | Concatenation Of Array | [View Solution](./1929-concatenation-of-array) |
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0560-subarray-sum-equals-k) |
-## Hash Table
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0560-subarray-sum-equals-k) |
-## Prefix Sum
-|  |
-| ------- |
-| [0560-subarray-sum-equals-k](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0560-subarray-sum-equals-k) |
-<!---LeetCode Topics End-->
