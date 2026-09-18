@@ -16,18 +16,7 @@
 | 560 | Subarray Sum Equals K | [View Solution](./0560-subarray-sum-equals-k) |
 | 1470 | Shuffle The Array | [View Solution](./1470-shuffle-the-array) |
 | 1929 | Concatenation Of Array | [View Solution](./1929-concatenation-of-array) |
+| 2348 | Number Of Zero Filled Subarrays | [View Solution](./2348-number-of-zero-filled-subarrays) |
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [2348-number-of-zero-filled-subarrays](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/2348-number-of-zero-filled-subarrays) |
-## Math
-|  |
-| ------- |
-| [2348-number-of-zero-filled-subarrays](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/2348-number-of-zero-filled-subarrays) |
-<!---LeetCode Topics End-->
