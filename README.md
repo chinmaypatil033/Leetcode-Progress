@@ -11,6 +11,7 @@
 | 57 | Insert Interval | [View Solution](./0057-insert-interval) |
 | 74 | Search A 2D Matrix | [View Solution](./0074-search-a-2d-matrix) |
 | 189 | Rotate Array | [View Solution](./0189-rotate-array) |
+| 268 | Missing Number | [View Solution](./0268-missing-number) |
 | 283 | Move Zeroes | [View Solution](./0283-move-zeroes) |
 | 347 | Top K Frequent Elements | [View Solution](./0347-top-k-frequent-elements) |
 | 509 | Fibonacci Number | [View Solution](./0509-fibonacci-number) |
@@ -21,31 +22,3 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0268-missing-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0268-missing-number) |
-## Hash Table
-|  |
-| ------- |
-| [0268-missing-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0268-missing-number) |
-## Math
-|  |
-| ------- |
-| [0268-missing-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0268-missing-number) |
-## Binary Search
-|  |
-| ------- |
-| [0268-missing-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0268-missing-number) |
-## Bit Manipulation
-|  |
-| ------- |
-| [0268-missing-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0268-missing-number) |
-## Sorting
-|  |
-| ------- |
-| [0268-missing-number](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0268-missing-number) |
-<!---LeetCode Topics End-->
