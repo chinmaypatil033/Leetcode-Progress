@@ -14,6 +14,7 @@
 | 268 | Missing Number | [View Solution](./0268-missing-number) |
 | 283 | Move Zeroes | [View Solution](./0283-move-zeroes) |
 | 347 | Top K Frequent Elements | [View Solution](./0347-top-k-frequent-elements) |
+| 485 | Max Consecutive Ones | [View Solution](./0485-max-consecutive-ones) |
 | 509 | Fibonacci Number | [View Solution](./0509-fibonacci-number) |
 | 560 | Subarray Sum Equals K | [View Solution](./0560-subarray-sum-equals-k) |
 | 1470 | Shuffle The Array | [View Solution](./1470-shuffle-the-array) |
@@ -22,11 +23,3 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0485-max-consecutive-ones](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0485-max-consecutive-ones) |
-<!---LeetCode Topics End-->
