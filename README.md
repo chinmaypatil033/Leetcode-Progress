@@ -22,3 +22,11 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0485-max-consecutive-ones](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0485-max-consecutive-ones) |
+<!---LeetCode Topics End-->
