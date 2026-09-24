@@ -10,6 +10,7 @@
 | 56 | Merge Intervals | [View Solution](./0056-merge-intervals) |
 | 57 | Insert Interval | [View Solution](./0057-insert-interval) |
 | 74 | Search A 2D Matrix | [View Solution](./0074-search-a-2d-matrix) |
+| 169 | Majority Element | [View Solution](./0169-majority-element) |
 | 189 | Rotate Array | [View Solution](./0189-rotate-array) |
 | 268 | Missing Number | [View Solution](./0268-missing-number) |
 | 283 | Move Zeroes | [View Solution](./0283-move-zeroes) |
@@ -23,31 +24,3 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
-## Hash Table
-|  |
-| ------- |
-| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
-## Divide and Conquer
-|  |
-| ------- |
-| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
-## Sorting
-|  |
-| ------- |
-| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
-## Counting
-|  |
-| ------- |
-| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
-## Boyer–Moore Majority Vote Algorithm
-|  |
-| ------- |
-| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
-<!---LeetCode Topics End-->
