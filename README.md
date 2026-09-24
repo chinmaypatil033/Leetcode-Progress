@@ -24,3 +24,31 @@
 | 2529 | Maximum Count Of Positive Integer And Negative Integer | [View Solution](./2529-maximum-count-of-positive-integer-and-negative-integer) |
 
 All accepted LeetCode solutions are added automatically.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
+## Hash Table
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
+## Sorting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/chinmaypatil033/Leetcode-Progress/tree/master/0169-majority-element) |
+<!---LeetCode Topics End-->
